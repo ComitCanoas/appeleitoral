@@ -41,6 +41,11 @@ class Politico extends Model implements Transformable
         return $this->hasMany(PoliticoEleicao::class);
     }
 
+	public function getPoliticoEleicao()
+	{
+		return $this->politicoEleicao->last();
+	}
+
     public function prefeito()
     {
         return $this->hasOne(CidadePolitico::class, 'prefeito_id', 'id');
@@ -55,4 +60,5 @@ class Politico extends Model implements Transformable
     {
         return $this->hasOne(CidadePolitico::class, 'candidato_ptb_id', 'id');
     }
+
 }

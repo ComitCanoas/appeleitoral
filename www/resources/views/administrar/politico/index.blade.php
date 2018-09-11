@@ -74,6 +74,11 @@
                                         <div class="col-12 text-center">
                                             {{ $politico->nome }}
                                         </div>
+										@if ($politico->getPoliticoEleicao() != NULL)
+											<div class="col-12 text-center">
+	                                            <p class="small">{{ $politico->getPoliticoEleicao()->partido }}</p>
+	                                        </div>
+										@endif
                                     </div>
                                 </div>
                                 <div class="card-footer">
