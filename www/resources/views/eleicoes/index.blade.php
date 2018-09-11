@@ -52,6 +52,9 @@
                                         <div class="col-12 text-center">
                                             <h3 class="card-title font-weight-bold text-center">
                                                 {{ $prefeito->nome }}
+												@if($prefeito->getPoliticoEleicao() != NULL)
+													<p style="font-size: 14px;">{{ $prefeito->getPoliticoEleicao()->partido }}</p>
+											    @endif
                                             </h3>
                                             <div class="row">
                                                 <div class="col-12 text-center">
