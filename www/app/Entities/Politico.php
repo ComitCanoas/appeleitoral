@@ -42,7 +42,7 @@ class Politico extends Model implements Transformable
     }
 
 	public function getPoliticoEleicao()
-	{
+	{//dd($this->politicoEleicao->last());
 		return $this->politicoEleicao->last();
 	}
 

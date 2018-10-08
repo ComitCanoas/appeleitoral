@@ -72,7 +72,7 @@
                                             <br><a href="{{ route('politico.editFoto', $politico->id) }}" class="btn btn-sm btn-primary mt-2">Alterar Foto</a>
                                         </div>
                                         <div class="col-12 text-center">
-                                            {{ $politico->nome }}
+                                            {{ $politico->nome}}
                                         </div>
 										@if ($politico->getPoliticoEleicao() != NULL)
 											<div class="col-12 text-center">

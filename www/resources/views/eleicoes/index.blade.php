@@ -105,7 +105,7 @@
                                             <h3 class="card-title font-weight-bold text-center">
                                                 {{ $vicePrefeito->nome }}
 												@if($vicePrefeito->getPoliticoEleicao() != NULL)
-													<p style="font-size: 14px;">{{ $prefeito->getPoliticoEleicao()->partido }}</p>
+													<p style="font-size: 14px;">{{ $vicePrefeito->getPoliticoEleicao()->partido }}</p>
 											    @endif
                                             </h3>
                                             <div class="row">
@@ -157,7 +157,7 @@
                                             <h3 class="card-title font-weight-bold text-center">
                                                 {{ $candidatoPTB->nome }}
 												@if($candidatoPTB->getPoliticoEleicao() != NULL)
-													<p style="font-size: 14px;">{{ $prefeito->getPoliticoEleicao()->partido }}</p>
+													<p style="font-size: 14px;">{{ $candidatoPTB->getPoliticoEleicao()->partido }}</p>
 											    @endif
                                             </h3>
                                             <div class="row">

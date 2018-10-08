@@ -23,7 +23,7 @@ class EleicaoController extends Controller
     {
         $cidades = $this->cidadeRepository->all();
         $cidade = $this->cidadeRepository->find($id);
-
+		
         return view('eleicoes.index', compact('cidade', 'cidades'));
     }
 

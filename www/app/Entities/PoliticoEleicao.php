@@ -52,4 +52,5 @@ class PoliticoEleicao extends Model implements Transformable
     {
         return $this->belongsTo(Cargo::class);
     }
+
 }

@@ -51,7 +51,7 @@ class PoliticoController extends Controller
     {
         if(request()->has('nome')){
             $politicos = Politico::where('nome', 'like', '%'.$request->get('nome').'%')->paginate(12)->appends('nome', request('nome'));
-        }else{
+		}else{
             $politicos = $this->politicoRepository->orderBy('nome')->paginate(12);
         }
 

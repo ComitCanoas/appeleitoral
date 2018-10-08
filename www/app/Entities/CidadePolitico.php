@@ -49,4 +49,5 @@ class CidadePolitico extends Model implements Transformable
         return $this->belongsTo(Politico::class, 'candidato_ptb_id');
     }
 
+
 }
